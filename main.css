@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  background-color: #f1f1f1;
+}
+body,
+p,
+h1 {
+  margin: 0;
+  font-weight: 400;
+  font-family: varela round, sans-serif;
+  color: #34302d;
+}
+h1 {
+  font-size: 24px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+}
+strong {
+  font-weight: 700;
+}
+.header {
+  display: flex;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #34302d;
+  border-top: 4px solid #6db33f;
+  height: 72px;
+  overflow: visible;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-around;
+}
+.search-dropdown {
+  display: none;
+  height: 30px;
+  padding: 28px 20px;
+  justify-content: space-around;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.search-dropdown .search-query {
+  background-color: transparent;
+  border-color: white;
+}
+.search-dropdown .searсh-button {
+  background-color: transparent;
+  border-color: white;
+}
+.navbar {
+  display: flex;
+  margin: 0 10px 0 0;
+}
+.spring-logo {
+  display: flex;
+  width: 224px;
+  height: 46px;
+  background: url("sprites/springlogo.png") -1px -1px no-repeat;
+}
+.spring-logo:hover {
+  background: url("sprites/springlogo.png") -1px -48px no-repeat;
+}
+.navbar-link a {
+  color: #eee;
+  text-transform: uppercase;
+  text-shadow: none;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 28px 20px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.navbar-link:hover a {
+  color: #eee;
+  background-color: #6db33f;
+}
+.icon-search {
+  font-size: 24px;
+  cursor: pointer;
+}
+#search-input-close {
+  display: none;
+}
+.active a {
+  background-color: #6db33f;
+  box-shadow: none;
+}
+.body-container {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+.main-body {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  margin-bottom: 0;
+  max-width: 1000px;
+  align-self: center;
+}
+.about {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 30px 0 60px;
+}
+.projects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3%;
+  height: 340px;
+  text-align: center;
+  border: 1px solid rgba(112, 112, 112, 0.2);
+  width: 255px;
+  margin-bottom: 1vw;
+}
+.project:hover {
+  border: 1px solid black;
+}
+.project-logo-container {
+  margin-bottom: 25px;
+  height: 137px;
+  vertical-align: middle;
+}
+.project-title {
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.project-description {
+  font-size: 14px;
+  line-height: 20px;
+}
+.icon {
+  background-image: url("sprites/iconsprite.png");
+}
+.logo-spring-boot {
+  width: 102px;
+  height: 90px;
+  background-position: 143px 837px;
+  margin-top: 23px;
+}
+.logo-spring-framework {
+  width: 135px;
+  height: 133px;
+  background-position: 518px 837px;
+  margin-top: 2px;
+}
+.logo-spring-cloud-dataflow {
+  width: 130px;
+  height: 105px;
+  background-position: 669px 1072px;
+  margin-top: 11px;
+}
+.logo-spring-cloud {
+  width: 150px;
+  height: 111px;
+  background-position: 253px 955px;
+  margin-top: 13px;
+}
+.logo-spring-data {
+  width: 111px;
+  height: 111px;
+  background-position: 519px 512px;
+  margin-top: 13px;
+}
+.logo-spring-integration {
+  width: 145px;
+  height: 104px;
+  background-position: 361px 677px;
+  margin-top: 16px;
+}
+.icon-spring-logo-mobile {
+  width: 204px;
+  height: 60px;
+  background-position: 904px 302px;
+  transform: scale(0.5);
+  margin-left: 35%;
+}
+.mobile-nav {
+  display: none;
+  background-color: #34302d;
+  height: 50px;
+  border-left: 1px solid #34302d;
+  align-items: center;
+}
+.mobile-menu-icon {
+  color: #f1f1f1;
+  font-size: 21px;
+  margin-left: 13px;
+}
+.mobile-navigation {
+  margin-top: 340px;
+  display: none;
+  min-width: 270px;
+  background-color: #34302d;
+  z-index: 999;
+  min-height: 390px;
+  box-shadow: inset -1px 0 2px rgba(0, 0, 0, 0.3);
+  flex-direction: column;
+  color: #fff;
+}
+
+.mobile-navigation .navbar-link a {
+  border-bottom: 1px solid #474441;
+  color: #f1f1f1;
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 15px;
+  text-transform: none;
+}
+.mobile-navigation .navbar-link.active a {
+  border-bottom: 1px solid transparent;
+  background-color: #262321;
+}
+.mobile-navigation .navbar-link:hover a {
+  border-bottom: 1px solid transparent;
+  background-color: #262321;
+}
+.mobile-search-container {
+  border-bottom: 1px solid #474441;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 15px;
+  text-transform: none;
+  text-decoration: none;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.searсh-button .icon-search {
+  font-size: 15px;
+  color: #515151;
+}
+.searсh-button {
+  background-color: #34302d;
+  border-color: #34302d;
+  outline: none;
+}
+input.search-query {
+  width: 80%;
+  margin-bottom: 0;
+  background-color: #515151;
+  border-color: #515151;
+  font-family: helvetica neue, Helvetica, Arial, sans-serif;
+  outline: none;
+}
+@media (max-width: 1000px) {
+  body,
+  html {
+    height: 100%;
+  }
+  .desktop {
+    display: none !important;
+  }
+  .search-dropdown {
+    display: none;
+  }
+  .mobile-nav {
+    display: flex;
+  }
+  .project {
+    flex-grow: 1;
+  }
+  .project:nth-child(even) {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .project {
+    flex-grow: 1;
+  }
+}
