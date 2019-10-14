@@ -50,10 +50,12 @@ strong {
   border-bottom: 1px solid #ddd;
 }
 .search-dropdown .search-query {
+  width: 60%;
   background-color: transparent;
   font-size: 20px;
   font-family: helvetica neue, Helvetica, Arial, sans-serif;
   border: none;
+  outline: none;
 }
 .search-dropdown .searсh-button {
   background-color: transparent;
@@ -195,13 +197,12 @@ strong {
   height: 60px;
   background-position: 904px 302px;
   transform: scale(0.5);
-  margin-left: 35%;
+  margin-left: 26%;
 }
 .mobile-nav {
   display: none;
   background-color: #34302d;
   height: 50px;
-  border-left: 1px solid #34302d;
   align-items: center;
 }
 .mobile-menu-icon {
@@ -210,11 +211,12 @@ strong {
   margin-left: 13px;
 }
 .mobile-navigation {
-  margin-top: 340px;
+  margin-top: 607px;
   display: none;
   min-width: 270px;
   background-color: #34302d;
   z-index: 999;
+  height: 100vh;
   min-height: 390px;
   box-shadow: inset -1px 0 2px rgba(0, 0, 0, 0.3);
   flex-direction: column;
@@ -248,7 +250,7 @@ strong {
   line-height: 15px;
   text-transform: none;
   text-decoration: none;
-  padding: 15px;
+  padding: 8px;
   display: flex;
   justify-content: space-between;
 }
@@ -257,18 +259,22 @@ strong {
   color: #515151;
 }
 .searсh-button {
-  background-color: #34302d;
+  background-color: #464340;
+  padding-right: 5px;
   border: none;
   outline: none;
 }
-input.search-query {
-  width: 60%;
+.mobile-search-container input.search-query {
   font-size: 16px;
   margin-bottom: 0;
-  background-color: #515151;
+  background-color: #464340;
   border: none;
   font-family: helvetica neue, Helvetica, Arial, sans-serif;
   outline: none;
+  color: #34302d;
+  height: 10px;
+  padding: 10px 5px;
+  width: 100%;
 }
 @media (max-width: 1000px) {
   body,
@@ -294,5 +300,8 @@ input.search-query {
 @media (max-width: 600px) {
   .project {
     flex-grow: 1;
+  }
+  .project:nth-child(even) {
+    margin-left: 0;
   }
 }

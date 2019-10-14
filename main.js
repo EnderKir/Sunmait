@@ -35,9 +35,11 @@ const model = {
 const view = {
   addMobileNav: function() {
     mobileNav.style.display = "flex";
+    document.getElementsByTagName('html')[0].style.overflow = 'hidden';
   },
   removeMobileNav: function() {
     mobileNav.style.display = "none";
+    document.getElementsByTagName('html')[0].style.overflow = '';
   },
   addDropdown: function() {
     dropdown.style.display = "flex";
