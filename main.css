@@ -276,7 +276,7 @@ input.search-query {
     display: none !important;
   }
   .search-dropdown {
-    display: none;
+    display: none !important;
   }
   .mobile-nav {
     display: flex;

@@ -3,7 +3,7 @@ const model = {
   isMobileNavOpen: false,
   isDropdownOpen: false,
   checkMobileNav: function() {
-    if (this.isMobileNavOpen == false) {
+    if (this.isMobileNavOpen === false) {
       view.addMobileNav();
       this.isMobileNavOpen = true;
     } else {
@@ -18,6 +18,16 @@ const model = {
     } else {
       view.removeDropdown();
       this.isDropdownOpen = false;
+    }
+  },
+  checkBodyClick: function(e) {
+    if (e.target.id != "openMobileNav") {
+      if (this.isMobileNavOpen === true) {
+        if (!e.target.closest(".mobile-navigation")) {
+          view.removeMobileNav();
+          this.isMobileNavOpen = false;
+        }
+      }
     }
   }
 };
@@ -49,6 +59,9 @@ const controller = {
   },
   openSearchDropdown: function() {
     model.checkDropdown();
+  },
+  bodyClick: function(e) {
+    model.checkBodyClick(e);
   }
 };
 const mobileNavBut = document.getElementById("openMobileNav");
@@ -56,8 +69,7 @@ const mobileNav = document.getElementById("mobile-navigation");
 mobileNavBut.addEventListener("click", controller.openMobileNav);
 const inputOpenBut = document.getElementById("search-input-open");
 const inputCloseBut = document.getElementById("search-input-close");
-console.log(inputOpenBut);
-console.log(inputCloseBut);
 const dropdown = document.getElementById("search-dropdown");
 inputOpenBut.addEventListener("click", controller.openSearchDropdown);
 inputCloseBut.addEventListener("click", controller.openSearchDropdown);
+document.body.addEventListener("click", controller.bodyClick);
