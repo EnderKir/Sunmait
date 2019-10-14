@@ -51,11 +51,13 @@ strong {
 }
 .search-dropdown .search-query {
   background-color: transparent;
-  border-color: white;
+  font-size: 20px;
+  font-family: helvetica neue, Helvetica, Arial, sans-serif;
+  border: none;
 }
 .search-dropdown .searсh-button {
   background-color: transparent;
-  border-color: white;
+  border: none;
 }
 .navbar {
   display: flex;
@@ -256,14 +258,15 @@ strong {
 }
 .searсh-button {
   background-color: #34302d;
-  border-color: #34302d;
+  border: none;
   outline: none;
 }
 input.search-query {
-  width: 80%;
+  width: 60%;
+  font-size: 16px;
   margin-bottom: 0;
   background-color: #515151;
-  border-color: #515151;
+  border: none;
   font-family: helvetica neue, Helvetica, Arial, sans-serif;
   outline: none;
 }
